@@ -1,0 +1,6 @@
+CREATE USER IF NOT EXISTS 'app_g8'@'localhost' IDENTIFIED BY '';
+ALTER USER 'app_g8'@'localhost' IDENTIFIED BY '';
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON meteo_g8.* TO 'app_g8'@'localhost';
+
+FLUSH PRIVILEGES;
